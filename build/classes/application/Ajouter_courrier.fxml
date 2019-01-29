@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1045.0" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AjouterCourrierController">
+   <center>
+      <StackPane fx:id="rootPane" BorderPane.alignment="CENTER">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0" prefWidth="849.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <Label text="Accueil / Courrier / " textFill="#868686">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Label>
+                        <Hyperlink text="Nouveau">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </Hyperlink>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets right="30.0" />
+                     </padding>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="96.0" prefWidth="849.0" style="-fx-background-color: #FFF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="405.0" prefWidth="478.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXDatePicker fx:id="date_arrivee" prefWidth="270.0" promptText="Date d'arrivée">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <JFXTextField fx:id="pre_reference" labelFloat="true" promptText="Pré Réference">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXDatePicker fx:id="date_pre_reference" prefWidth="270.0" promptText="Date Pré Réference">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <JFXTextField fx:id="origine" labelFloat="true" promptText="Origine">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXTextField fx:id="reference" labelFloat="true" promptText="Réference">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXDatePicker fx:id="date_courrier" prefWidth="270.0" promptText="Date Courrier">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <JFXTextArea fx:id="objet" labelFloat="true" promptText="Objet">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXTextArea>
+                              <JFXTextField fx:id="classement" labelFloat="true" promptText="Classement">
+                                 <VBox.margin>
+                                    <Insets top="18.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXDatePicker fx:id="date_traitement" prefHeight="28.0" prefWidth="270.0" promptText="Date classement">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="18.0" />
+                                 </VBox.margin>
+                              </JFXDatePicker>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="34.0" prefWidth="799.0">
+                                 <children>
+                                    <JFXButton alignment="CENTER" contentDisplay="RIGHT" onAction="#enregistrerCourrier" prefHeight="41.0" prefWidth="154.0" style="-fx-background-color: #0FABD7; -fx-background-radius: 20px;" text="Ajouter le courrier" textFill="WHITE" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" left="30.0" right="30.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <HBox prefHeight="74.0" prefWidth="1045.0" style="-fx-background-color: #0FABD7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="402.0" text="NOUVEAU COURRIER" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Cambria" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

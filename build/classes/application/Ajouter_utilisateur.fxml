@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="489.0" prefWidth="409.0" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AjouterUtilisateurController">
+   <children>
+      <StackPane fx:id="rootPane">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="409.0" style="-fx-background-color: #fff;">
+               <children>
+                  <JFXTextField fx:id="pseudo" layoutX="100.0" layoutY="185.0" prefHeight="25.0" prefWidth="209.0" promptText="Pseudo" />
+                  <JFXComboBox fx:id="direction" layoutX="100.0" layoutY="305.0" prefHeight="25.0" prefWidth="209.0" promptText="Direction" />
+                  <JFXComboBox fx:id="fonction" layoutX="100.0" layoutY="369.0" prefHeight="25.0" prefWidth="209.0" promptText="Fonction" />
+                  <JFXButton layoutX="100.0" layoutY="453.0" onAction="#ajouterUtilisateur" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #157dc8;" text="Ajouter l'utilisateur" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Pane prefHeight="140.0" prefWidth="409.0" style="-fx-background-color: #157dc8;">
+                     <children>
+                        <Text fill="WHITE" layoutX="54.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOUVEAU UTILISATEUR">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="385.0" layoutY="4.0" onMouseClicked="#closeCurrentWindow" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Exit_48px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="177.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Circled.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <JFXPasswordField fx:id="mot_de_passe" layoutX="100.0" layoutY="244.0" prefHeight="25.0" prefWidth="209.0" promptText="Mot de passe" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditerDirectionController">
+   <children>
+      <StackPane fx:id="rootPane">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="409.0" style="-fx-background-color: #fff;">
+               <children>
+                  <JFXTextField fx:id="id" disable="true" editable="false" layoutX="100.0" layoutY="182.0" prefHeight="25.0" prefWidth="209.0" promptText="Numero" />
+                  <JFXTextField fx:id="nom" layoutX="100.0" layoutY="245.0" prefHeight="25.0" prefWidth="209.0" promptText="Nom de la direction" />
+                  <Pane prefHeight="140.0" prefWidth="409.0" style="-fx-background-color: #157dc8;">
+                     <children>
+                        <Text fill="WHITE" layoutX="64.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDITER LA DIRECTION">
+                           <font>
+                              <Font name="Cambria" size="29.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="385.0" layoutY="4.0" onMouseClicked="#closeCurrentWindow" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Exit_48px.png" />
+                           </image>
+                        </ImageView>
+                       
+                     </children>
+                  </Pane>
+                  <JFXButton layoutX="100.0" layoutY="332.0" onAction="#btnModifierDirection" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #157dc8;" text="Mettre à jour" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+   <effect>
+      <DropShadow color="#161715" height="18.03" radius="8.515" spread="0.12" width="18.03" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="405.0" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="96.0" prefWidth="849.0" style="-fx-background-color: #FFF;" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="471.0" prefWidth="80.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="105.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" VBox.vgrow="ALWAYS">
+                           <image>
+                              <Image url="@images/DSC01109.JPG" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="50.0" top="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Nom : RAZAFINDRAINIBE">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="61.0" text="Prénom : Raphaël Benja Ny Nosy">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="Email : raphaelbenja2@gmail.com">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="27.0" text="Facebook : web.facebook.com/raphaelbenja.razafindrainibe">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="44.0" text="Twitter : www.twitter.com/raphael_benja">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="78.0" text="Etudiant : Ecole Nationale d'Informatique (E.N.I)">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="95.0" prefWidth="221.0" text="Phone : +261327137451, +261347975058" wrapText="true">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="363.0" prefHeight="17.0" prefWidth="148.0" text="Université de Fianarantsoa" wrapText="true" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="10.0" top="25.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="74.0" prefWidth="1045.0" style="-fx-background-color: #0FABD7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="titre" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="402.0" text="DEVELOPPEUR" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Cambria" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

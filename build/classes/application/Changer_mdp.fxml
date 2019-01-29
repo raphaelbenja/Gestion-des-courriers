@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="525.0" stylesheets="@styles/style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PasswordController">
+   <center>
+      <StackPane fx:id="rootPane" BorderPane.alignment="CENTER">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="147.0" prefWidth="513.0" style="-fx-background-color: #FFF;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="471.0" prefWidth="80.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXPasswordField fx:id="ancien" focusColor="#21a0bc" labelFloat="true" promptText="Ancien mot de passe">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                              <JFXPasswordField fx:id="nouveau" focusColor="#21a0bc" labelFloat="true" promptText="Nouveau mot de passe">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="22.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                              <JFXPasswordField fx:id="confirmation" focusColor="#21a0bc" labelFloat="true" promptText="Confirmer votre mot de passe">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="22.0" />
+                                 </VBox.margin>
+                              </JFXPasswordField>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="25.0" layoutY="25.0" prefHeight="471.0" prefWidth="80.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label fx:id="ancienErr" prefHeight="19.0" prefWidth="235.0" textFill="#ff0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="61.0" prefHeight="19.0" prefWidth="229.0" textFill="#ff0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="25.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="nouveauErr" layoutX="10.0" layoutY="10.0" prefHeight="19.0" prefWidth="239.0" textFill="#ff0909">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="25.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" top="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="513.0" style="-fx-background-color: #FFF;">
+                     <children>
+                        <JFXButton buttonType="RAISED" onAction="#btnMettreaJourUtilisateur" prefHeight="33.0" prefWidth="154.0" ripplerFill="#9ed4e4" styleClass="btn" text="Confirmer" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <HBox prefHeight="74.0" prefWidth="1045.0" style="-fx-background-color: #0FABD7;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="402.0" text="CHANGER MOT DE PASSE" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Cambria" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
